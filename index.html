@@ -12,7 +12,8 @@
 	<script language="javascript" type="text/javascript">
   $(document).ready(function() {
     $('#trigger').click(function(){
-      $("#dialog").dialog();
+      $("#dialog").dialog("open");
+      return false;
     }); 
   });                  
 </script>
