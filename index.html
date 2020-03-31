@@ -11,9 +11,9 @@
 <!------ Include the above in your HEAD tag ---------->
 	<script language="javascript" type="text/javascript">
   $(document).ready(function() {
-    $('#trigger').click(function(){
-      $("#dialog").dialog("open");
-      return false;
+  var dialog = $("#dialog").dialog({ autoOpen: true });	
+  $("trigger").click(function(e){
+    dialog.dialog('');
     }); 
   });                  
 </script>
